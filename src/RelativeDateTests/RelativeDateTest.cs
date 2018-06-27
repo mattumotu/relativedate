@@ -101,5 +101,28 @@
             Assert.AreEqual(new DateTime(targetYear, targetMonth, 13), actual.Fourth(RelativeDate.Interval.WeekendDay));
             Assert.AreEqual(new DateTime(targetYear, targetMonth, 27), actual.Last(RelativeDate.Interval.WeekendDay));
         }
+
+        [TestMethod]
+        public void ReadMeTests()
+        {
+            DateTime firstMonday = new RelativeDate(2018, 6).First(RelativeDate.Interval.Monday);
+            Assert.AreEqual(new DateTime(2018, 6, 4), firstMonday);
+            // first Monday in June 2018 is the 4th
+
+            DateTime secondThursday = new RelativeDate(2018, 6).Second(RelativeDate.Interval.Thursday);
+            Assert.AreEqual(new DateTime(2018, 6, 14), secondThursday);
+            // second Thursday in June 2018 is the 14th
+
+            DateTime thirdDay = new RelativeDate(2018, 6).Third(RelativeDate.Interval.Day);
+            Assert.AreEqual(new DateTime(2018, 6, 3), thirdDay);
+            // third day in June 2018 is the 3rd (Duh)
+
+            DateTime fourthWeekDay = new RelativeDate(2018, 6).Fourth(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2018, 6, 6), fourthWeekDay);
+            // fourth week day in June 2018 is the 6th (It's a Wednesday btw)
+
+            DateTime lastWeekEndDay = new RelativeDate(2018, 6).Last(RelativeDate.Interval.WeekendDay);
+            Assert.AreEqual(new DateTime(2018, 6, 30), lastWeekEndDay);
+        }
     }
 }
