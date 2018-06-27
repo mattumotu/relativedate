@@ -7,7 +7,7 @@ branches:
 
 environment:
   COVERALLS_REPO_TOKEN:
-    secure: sHCrjCAFwuQbrjHStRTs00Yy828yMqFt1pompnav1411nvS998OJ8f4R4JQ9Rlx5
+    secure: OlbX7BltbLFKwXViwwUIlcLxJNFOFABIs8Atqi9pDvHSSufhvXjhdZaPHI8RfGVK
 
 configuration: Debug
 
