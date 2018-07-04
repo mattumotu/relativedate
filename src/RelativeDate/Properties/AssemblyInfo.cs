@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("RelativeDate")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyDescription("Need to know the first Thursday, second weekday, third weekend day or last day of a given month? This is for you.")]
+[assembly: AssemblyConfiguration("Release")]
+[assembly: AssemblyCompany("Matt Phillips")]
 [assembly: AssemblyProduct("RelativeDate")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCopyright("Copyright © 2017, Matt Phillips")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
