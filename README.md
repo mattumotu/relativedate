@@ -10,7 +10,7 @@ Installation
 ---
 Via NuGet
 
-    PM> Install-Package Postman
+    PM> Install-Package RelativeDate
     
 Usage
 ---
