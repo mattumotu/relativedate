@@ -92,11 +92,6 @@
                 {
                     targetDate = targetDate.AddDays(2); //go to next monday
                 }
-                else if (targetDate.DayOfWeek == DayOfWeek.Sunday) //if day is sunday
-                {
-                    targetDate = targetDate.AddDays(1); //go to next monday
-                }
-
                 return targetDate;
             }
 
@@ -127,10 +122,6 @@
                 {
                     targetDate = targetDate.AddDays(2);
                 }
-                else if (targetDate.DayOfWeek == DayOfWeek.Sunday)
-                {
-                    targetDate = targetDate.AddDays(1);
-                }
                 return targetDate;
             }
 
@@ -160,10 +151,6 @@
                 if (targetDate.DayOfWeek == DayOfWeek.Saturday)
                 {
                     targetDate = targetDate.AddDays(2);
-                }
-                else if (targetDate.DayOfWeek == DayOfWeek.Sunday)
-                {
-                    targetDate = targetDate.AddDays(1);
                 }
                 return targetDate;
             }
