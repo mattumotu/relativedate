@@ -19,11 +19,8 @@ init:
         if($tag) {
           $posAfterVchar = $tag.LastIndexOf("v") + 1
           $versionLength = $tag.Length - $posAfterVchar
-
           $gitVersion=$tag.substring($posAfterVchar, $versionLength)
-
-          $newVersion="$gitVersion.$env:APPVEYOR_BUILD_NUMBER"
-
+          $newVersion="$gitVersion"
           write-host "Update appveyor build version to:$newVersion"
           $env:appveyor_build_version="$newVersion"
           appveyor UpdateBuild -Version "$newVersion"
