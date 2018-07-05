@@ -124,5 +124,43 @@
             DateTime lastWeekEndDay = new RelativeDate(2018, 6).Last(RelativeDate.Interval.WeekendDay);
             Assert.AreEqual(new DateTime(2018, 6, 30), lastWeekEndDay);
         }
+
+        [TestMethod]
+        public void DOWSaturday()
+        {
+            DateTime firstSaturday = new RelativeDate(2018, 6).First(RelativeDate.Interval.Saturday);
+            Assert.AreEqual(new DateTime(2018, 6, 2), firstSaturday);
+
+            DateTime secondSaturday = new RelativeDate(2018, 6).Second(RelativeDate.Interval.Saturday);
+            Assert.AreEqual(new DateTime(2018, 6, 9), secondSaturday);
+
+            DateTime thirdSaturday = new RelativeDate(2018, 6).Third(RelativeDate.Interval.Saturday);
+            Assert.AreEqual(new DateTime(2018, 6, 16), thirdSaturday);
+
+            DateTime fourthSaturday = new RelativeDate(2018, 6).Fourth(RelativeDate.Interval.Saturday);
+            Assert.AreEqual(new DateTime(2018, 6, 23), fourthSaturday);
+
+            DateTime lastSaturday = new RelativeDate(2018, 6).Last(RelativeDate.Interval.Saturday);
+            Assert.AreEqual(new DateTime(2018, 6, 30), lastSaturday);
+        }
+
+        [TestMethod]
+        public void DOWSunday()
+        {
+            DateTime firstSunday = new RelativeDate(2018, 6).First(RelativeDate.Interval.Sunday);
+            Assert.AreEqual(new DateTime(2018, 6, 3), firstSunday);
+
+            DateTime secondSunday = new RelativeDate(2018, 6).Second(RelativeDate.Interval.Sunday);
+            Assert.AreEqual(new DateTime(2018, 6, 10), secondSunday);
+
+            DateTime thirdSunday = new RelativeDate(2018, 6).Third(RelativeDate.Interval.Sunday);
+            Assert.AreEqual(new DateTime(2018, 6, 17), thirdSunday);
+
+            DateTime fourthSunday = new RelativeDate(2018, 6).Fourth(RelativeDate.Interval.Sunday);
+            Assert.AreEqual(new DateTime(2018, 6, 24), fourthSunday);
+
+            DateTime lastSunday = new RelativeDate(2018, 6).Last(RelativeDate.Interval.Sunday);
+            Assert.AreEqual(new DateTime(2018, 6, 24), lastSunday);
+        }
     }
 }

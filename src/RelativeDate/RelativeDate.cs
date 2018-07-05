@@ -218,6 +218,10 @@
             // firstDay - targetDay shows us how far ahead the first is compared to target date
             // (e.g. if firstDay is Tue and targetDay is Monday, shift will be 1)
             int shift = (firstDay - targetDay);
+            if (shift < 1)
+            {
+                shift += 7;
+            }
             //Shift back from the first of next month
             return new DateTime(this.targetYear, this.targetMonth + 1, 1).AddDays(-shift);
         }
