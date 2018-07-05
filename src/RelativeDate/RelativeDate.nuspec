@@ -8,7 +8,7 @@
     <owners>$author$</owners>
     <licenseUrl>https://github.com/mattumotu/relativedate/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/mattumotu/relativedate/</projectUrl>
-    <iconUrl>https://github.com/mattumotu/postman/blob/relativedate/relativedate.png</iconUrl>
+    <iconUrl>https://github.com/mattumotu/relativedate/blob/master/relativedate.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <copyright>Copyright 2017</copyright>
