@@ -244,7 +244,6 @@
         [TestMethod]
         public void LastMonthIsSaturday()
         {
-            // 196 Last WeekDay where LastDOM is Sat
             RelativeDate actual = new RelativeDate(2018, 6);
 
             DateTime lastWeekDay = actual.Last(RelativeDate.Interval.WeekDay);
