@@ -236,9 +236,32 @@
 
             DateTime secondWeekendDay = actual.Second(RelativeDate.Interval.WeekendDay);
             Assert.AreEqual(new DateTime(2018, 7, 7), secondWeekendDay);
+
+            DateTime fourthWeekendDay = actual.Fourth(RelativeDate.Interval.WeekendDay);
+            Assert.AreEqual(new DateTime(2018, 7, 14), fourthWeekendDay);
+        }
+
+        [TestMethod]
+        public void LastMonthIsSaturday()
+        {
+            // 196 Last WeekDay where LastDOM is Sat
+            RelativeDate actual = new RelativeDate(2018, 6);
+
+            DateTime lastWeekDay = actual.Last(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2018, 6, 29), lastWeekDay);
+        }
+
+        [TestMethod]
+        public void LastMonthIsSunday()
+        {
+            RelativeDate actual = new RelativeDate(2017, 12);
+
+            DateTime lastWeekDay = actual.Last(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2017, 12, 29), lastWeekDay);
         }
 
         // 97 second weekday where 2nd is sunday (not possible)
         // 132 third weekday where 2nd weekday is sayurday (not possible)
+        // 166 fourth WeekDay where 3rd weekday is saturday (not possible)
     }
 }
