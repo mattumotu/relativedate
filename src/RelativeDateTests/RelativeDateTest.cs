@@ -162,5 +162,43 @@
             DateTime lastSunday = new RelativeDate(2018, 6).Last(RelativeDate.Interval.Sunday);
             Assert.AreEqual(new DateTime(2018, 6, 24), lastSunday);
         }
+
+        [TestMethod]
+        public void WeekDay_FirstIsSaturday()
+        {
+            DateTime first = new RelativeDate(2017, 7).First(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2017, 7, 3), first);
+
+            DateTime second = new RelativeDate(2017, 7).Second(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2017, 7, 4), second);
+
+            DateTime third = new RelativeDate(2017, 7).Third(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2017, 7, 5), third);
+
+            DateTime fourth = new RelativeDate(2017, 7).Fourth(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2017, 7, 6), fourth);
+
+            DateTime last = new RelativeDate(2017, 7).Last(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2017, 7, 31), last);
+        }
+
+        [TestMethod]
+        public void WeekDay_FirstIsSunday()
+        {
+            DateTime first = new RelativeDate(2018, 7).First(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2018, 7, 2), first);
+
+            DateTime second = new RelativeDate(2018, 7).Second(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2018, 7, 3), second);
+
+            DateTime third = new RelativeDate(2018, 7).Third(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2018, 7, 4), third);
+
+            DateTime fourth = new RelativeDate(2018, 7).Fourth(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2018, 7, 5), fourth);
+
+            DateTime last = new RelativeDate(2018, 7).Last(RelativeDate.Interval.WeekDay);
+            Assert.AreEqual(new DateTime(2018, 7, 31), last);
+        }
     }
 }

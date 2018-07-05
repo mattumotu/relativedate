@@ -87,15 +87,16 @@
 
             if (interval == Interval.WeekDay)
             {
-                DateTime targetDate = this.First(interval).AddDays(1);
-                if (targetDate.DayOfWeek == DayOfWeek.Saturday)
+                DateTime targetDate = this.First(interval).AddDays(1); //day after 1st
+                if (targetDate.DayOfWeek == DayOfWeek.Saturday) //if day is saturday
                 {
-                    targetDate = targetDate.AddDays(2);
+                    targetDate = targetDate.AddDays(2); //go to next monday
                 }
-                else if (targetDate.DayOfWeek == DayOfWeek.Sunday)
+                else if (targetDate.DayOfWeek == DayOfWeek.Sunday) //if day is sunday
                 {
-                    targetDate = targetDate.AddDays(1);
+                    targetDate = targetDate.AddDays(1); //go to next monday
                 }
+
                 return targetDate;
             }
 
