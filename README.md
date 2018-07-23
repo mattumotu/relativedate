@@ -4,7 +4,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/3atm9w710gwtsik4/branch/master?svg=true)](https://ci.appveyor.com/project/mattumotu/relativedate/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/mattumotu/relativedate/badge.svg?branch=master)](https://coveralls.io/github/mattumotu/relativedate?branch=master)
-[![Coverage Status](https://sonarcloud.io/api/project_badges/measure?project=mattumotu_relativedate&metric=alert_status)](https://sonarcloud.io/dashboard?id=mattumotu_relativedate)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=mattumotu_relativedate&metric=alert_status)](https://sonarcloud.io/dashboard?id=mattumotu_relativedate)
 [![NuGet](https://img.shields.io/nuget/v/RelativeDate.svg)](https://www.nuget.org/packages/RelativeDate/)
 
 Installation
